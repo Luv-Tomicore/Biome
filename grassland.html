@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biome Project - Biomes</title>
+
+    <link rel="stylesheet" href="CSS/external.css" />
+    <style>
+      nav {
+        position: absolute;
+        top: 10%;
+        left: 8%;
+      }
+      p {
+        font-size: 15px;
+        color: rgb(255, 250, 227);
+      }
+      body {
+        background-color: rgba(138, 76, 43, 0.913);
+      }
+      h1 {
+        font-size: 60px;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        color: rgb(240, 180, 133);
+      }
+      h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 5px;
+        background: linear-gradient(45deg, #ffbd99e8, #f3b17ede, #f08655fe);
+        transition: width 0.3s ease-in-out;
+      }
+
+      h1:hover::after {
+        width: 100%;
+      }
+      .container {
+        display: flex; /* Enable flexbox layout */
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        margin-top: 23%;
+
+        #box1 {
+          width: 50%;
+        }
+
+        #box2 {
+          width: 20%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Navigation Bar-->
+    <header>
+      <nav>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="forest.html">Tropical Forest Biome</a>
+          <a href="desert.html">Arid Desert Biome</a>
+          <a href="grassland.html">Savannah Grassland Biome</a>
+          <a href="tundra.html">Arctic Tundra Biome</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Savannah Grassland Biome</h1>
+      <div class="container">
+        <div id="box1">
+          <!--Location-->
+          <h2 style="font-size: 150%; color: rgb(243, 175, 97)">Location</h2>
+          <p>
+            Savannah Grasslands are located in South America, Northern
+            Australia, and about 50% of Africa (Central, East, and West).
+          </p>
+          <!--Climate-->
+          <h2 style="font-size: 150%; color: rgb(243, 175, 97)">Climate</h2>
+          <p>
+            The climate of the Savannah Grassland is distinct. The dry season is
+            6-8 months long, and the wet season is typically during summer. The
+            average temperature is 20°C to 30°C (68°F to 86°F). Savannahs get
+            50cm - 130cm of rainfall each year.
+          </p>
+          <!--Animals-->
+          <h2 style="font-size: 150%; color: rgb(243, 175, 97)">
+            Fauna (Animals)
+          </h2>
+          <p>
+            In the Savannah Grasslands, the majority of animals consist of
+            grazing mammals.
+          </p>
+          <p>They include:</p>
+
+          <ul
+            style="
+              color: rgb(255, 250, 227);
+              font-family: Arial;
+              margin-left: 5%;
+            ">
+            <li>Zebras</li>
+            <li>Wildebeests</li>
+            <li>Elephants</li>
+            <li>Giraffes</li>
+            <li>Buffalos</li>
+          </ul>
+
+          <p>Also, ostriches are found in Savannah Grasslands.</p>
+
+          <!--Plants-->
+          <h2 style="font-size: 150%; color: rgb(243, 175, 97)">
+            Flora (Plants)
+          </h2>
+          <p>
+            The Savannah Grasslands also have unique flora. Just like the arid
+            desert, Savannahs also have short trees like the acacia and baobab.
+            Additionally, Candelabera trees grow there as well. There is also a
+            large variety of grasses in the Savannahs, like Kangaroo Grass
+            (Themeda), and Thatching Grass.
+          </p>
+        </div>
+        <div id="box2">
+          <img
+            style="
+              border: rgb(243, 175, 97) double 8px;
+              border-radius: 5%;
+              margin-left: 20%;
+            "
+            src="Images/grassmap.jpg"
+            alt="Picture of a map of Savannah Grassland "
+            title="Picture of a map of Savannah Grassland"
+            width="150%"
+            height="20%" />
+          <img
+            style="
+              border: rgb(243, 175, 97) double 8px;
+              border-radius: 5%;
+              margin-left: 20%;
+              margin-top: 5%;
+            "
+            src="Images/savananimals.webp"
+            alt="Picture of the animals in the Savannah"
+            title="Picture of the animals in the Savannah"
+            width="150%"
+            height="25%" />
+          <img
+            style="
+              border: rgb(243, 175, 97) double 8px;
+              border-radius: 5%;
+              margin-left: 20%;
+              margin-top: 10%;
+              margin-bottom: -100%;
+            "
+            src="Images/plantsav.webp"
+            alt="Picture of plants and trees in the Savannah"
+            title="Picture of plants and trees in the Savannah"
+            width="150%"
+            height="25%" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

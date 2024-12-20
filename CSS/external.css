@@ -1,0 +1,40 @@
+/* Styles for the navigation bar */
+
+.navbar {
+  display: flex; /* Uses flexbox for layout */
+  gap: 20px; /* Adds space between the navigation items */
+  padding: 20px; /* Adds padding around the navbar */
+}
+p {
+  font-family: Arial;
+  text-decoration: solid; /* Sets the text decoration */
+  text-align: center; /* Centers the text inside the links */
+  color: #121212;
+  font-size: 16px;
+}
+
+/* Styles for individual navigation links */
+.navbar a {
+  text-align: center;
+  background-color: #b6e2f4; /* Sets the background color of the links */
+  color: #333333; /* Sets the text color to white */
+  padding: 10px; /* Adds padding inside the links */
+  border: 5px solid #6f7dae; /* Adds a dotted border with a specified color */
+  border-radius: 15px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-family: Arial;
+  text-decoration: solid; /* Sets the text decoration */
+  text-align: center; /* Centers the text inside the links */
+  width: 155px; /* Sets a fixed width for the links */
+  height: 40px; /* Sets a fixed height for the links */
+  align-items: center; /* Vertically centers the text inside the link */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+/* Styles for the hover state of the links */
+.navbar a:hover {
+  background-color: #dbedf5; /* Changes background color on hover */
+  transform: scale(1.1); /* Slightly enlarges the bubble on hover */
+}

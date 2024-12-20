@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biome Project - Biomes</title>
+
+    <link rel="stylesheet" href="CSS/external.css" />
+    <style>
+      nav {
+        position: absolute;
+        top: 10%;
+        left: 8%;
+      }
+      body {
+        background-color: rgb(39, 117, 100);
+      }
+      h1 {
+        font-size: 60px;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        color: rgb(143, 234, 116);
+      }
+      h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 5px;
+        background: linear-gradient(45deg, #adcc87, #62ab66, #6b8422);
+        transition: width 0.3s ease-in-out;
+      }
+
+      h1:hover::after {
+        width: 100%;
+      }
+      p {
+        font-size: 15px;
+        color: rgb(255, 250, 227);
+      }
+      .container {
+        display: flex; /* Enable flexbox layout */
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        margin-top: 23%;
+
+        #box1 {
+          width: 50%;
+        }
+
+        #box2 {
+          width: 20%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Navigation Bar-->
+    <header>
+      <nav>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="forest.html">Tropical Forest Biome</a>
+          <a href="desert.html">Arid Desert Biome</a>
+          <a href="grassland.html">Savannah Grassland Biome</a>
+          <a href="tundra.html">Arctic Tundra Biome</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Tropical Forest Biome</h1>
+      <div class="container">
+        <div id="box1">
+          <!--Location-->
+          <h2 style="font-size: 150%; color: rgb(182, 232, 166)">Location</h2>
+          <p>
+            They are located in the equatorial zone and are typically found
+            closer to the equator. They can be found in Central and South
+            America, Africa, South Asia and Australia.
+          </p>
+          <!--Climate-->
+          <h2 style="font-size: 150%; color: rgb(182, 232, 166)">Climate</h2>
+          <p>
+            The climate is hot, wet, and humid. it is warm all year, with
+            average daily temperatures between 68°F and 77°F. The coldest month
+            has a minimum temperature of at least 64.4°F. Tropical rainforests
+            receive the most rain of any biome, with annual rainfall ranging
+            from 79 to 394 inches, it is always raining.
+          </p>
+          <!--Animals-->
+          <h2 style="font-size: 150%; color: rgb(182, 232, 166)">
+            Fauna (Animals)
+          </h2>
+          <p>
+            There are a variety of animals in the Tropical Forest. They range
+            from beetles, to birds, to kangaroos. The most commonly found
+            animals include different species of:
+          </p>
+          <ul
+            style="
+              color: rgb(255, 250, 227);
+              font-family: Arial;
+              margin-left: 5%;
+            ">
+            <li>Parrots</li>
+            <li>Monkeys</li>
+            <li>Bats and Rodents</li>
+            <li>Deer</li>
+            <li>Toucans</li>
+            <li>Apes</li>
+          </ul>
+
+          <p>
+            There are also also unique animals like tree kangaroos and the bird
+            of Paradise. These fauna are only found in Australia and New Guinea.
+          </p>
+
+          <!--Plants-->
+          <h2 style="font-size: 150%; color: rgb(182, 232, 166)">
+            Flora (Plants)
+          </h2>
+          <p>
+            In the Tropical Forest, there is a diverse population of flora. They
+            include many types of trees, flowers, and fungi. The large trees
+            that are commonly found are Conifers and Teak trees. Next, the most
+            common flower in tropical forests are orchids. This single species
+            usually dominates over the other flowers. Lastly, the fungi in
+            tropical rainforests include:
+          </p>
+          <ul
+            style="
+              color: rgb(255, 250, 227);
+              font-family: Arial;
+              margin-left: 5%;
+            ">
+            <li>Epiphytes</li>
+            <li>Mosses and algae</li>
+            <li>Litchens</li>
+            <li>Epiphytic orchids</li>
+          </ul>
+        </div>
+        <div id="box2">
+          <img
+            style="
+              border: #89d08d double 8px;
+              border-radius: 5%;
+              margin-left: 20%;
+            "
+            src="Images/map rainforest.jpg"
+            alt="Picture of a map of Tropical rainforests"
+            title="Picture of a map of Tropical rainforests"
+            width="150%"
+            height="30%" />
+          <img
+            style="
+              border: #89d08d double 8px;
+              border-radius: 5%;
+              margin-left: 20%;
+              margin-top: 10%;
+            "
+            src="Images/fauna.jpg"
+            alt="Picture of a map of Tropical rainforests"
+            title="Picture of a map of Tropical rainforests"
+            width="150%"
+            height="30%" />
+          <img
+            style="
+              border: #89d08d double 8px;
+              border-radius: 5%;
+              margin-left: 20%;
+              margin-top: 10%;
+            "
+            src="Images/flora.webp"
+            alt="Picture of a map of Tropical rainforests"
+            title="Picture of a map of Tropical rainforests"
+            width="150%"
+            height="30%" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

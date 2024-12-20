@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biome Project - Biomes</title>
+
+    <link rel="stylesheet" href="CSS/external.css" />
+    <style>
+      nav {
+        position: absolute;
+        top: 10%;
+        left: 8%;
+      }
+      body {
+        background-color: rgb(209, 234, 241);
+      }
+      h1 {
+        font-size: 60px;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        color: rgb(154, 186, 224);
+      }
+      h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 5px;
+        background: linear-gradient(45deg, #92b1d7e8, #a0bfc7de, #7592b0fe);
+        transition: width 0.3s ease-in-out;
+      }
+
+      h1:hover::after {
+        width: 100%;
+      }
+      .container {
+        display: flex; /* Enable flexbox layout */
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        margin-top: 23%;
+
+        #box1 {
+          width: 50%;
+        }
+
+        #box2 {
+          width: 20%;
+        }
+      }
+      td {
+        color: rgb(0, 0, 0);
+        border-radius: 5%;
+        border: solid;
+        border-width: 3px;
+        border-color: #24929c;
+        margin-left: 8%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Navigation Bar-->
+    <header>
+      <nav>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="forest.html">Tropical Forest Biome</a>
+          <a href="desert.html">Arid Desert Biome</a>
+          <a href="grassland.html">Savannah Grassland Biome</a>
+          <a href="tundra.html">Arctic Tundra Biome</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Savannah Grassland Biome</h1>
+      <div class="container">
+        <div id="box1">
+          <!--Location-->
+          <h2 style="font-size: 150%; color: rgb(96, 144, 163)">Location</h2>
+          <p>
+            Arctic Tundras are located in Northen Canada, edges of Alaska,
+            Northen Russia,top edges of Antartica and around the edges of
+            Greenland.
+          </p>
+          <!--Climate-->
+          <h2 style="font-size: 150%; color: rgb(96, 144, 163)">Climate</h2>
+          <p>
+            The climate of the Arctic Tundra is very harsh with very long
+            winters,that last for 6-10 months, and short cool summers. In the
+            winter the temperature ranges from a low of -34°C to a high of 12°C
+            and it is very dry with strong winds. In the Tundra, the weather is
+            so cold that the ground is permanently frozen below the surface, a
+            layer called permafrost. It recives low percipitation and there can
+            be no sunlight for as many as 163 days in a year. There is only
+            about 50-60 days where the temperature is high enough for plants to
+            grow.
+          </p>
+          <!--Animals-->
+          <h2 style="font-size: 150%; color: rgb(96, 144, 163)">
+            Fauna (Animals)
+          </h2>
+          <p>
+            In the Arctic Tundra, the majority of animals consist of carnivorous
+            mammals, herbivorous mammals, fish and birds.
+          </p>
+          <p>They include:</p>
+          <table style="width: 60%">
+            <tr>
+              <th>Herbivore</th>
+              <th>Canivore</th>
+            </tr>
+            <tr>
+              <td>Lemmings</td>
+              <td>Foxes</td>
+            </tr>
+            <tr>
+              <td>Artic hares</td>
+              <td>Snow leopards</td>
+            </tr>
+            <tr>
+              <td>Squirrels</td>
+              <td>Lynx</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Finches</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Wolves</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Polar bears</td>
+            </tr>
+          </table>
+          <!--Plants-->
+          <h2 style="font-size: 150%; color: rgb(96, 144, 163)">
+            Flora (Plants)
+          </h2>
+          <p>
+            In the Arctic Tudra, there is a vast variety of flora (about 1700
+            different species)! Some of the most commonly found plants are;
+            Cottton grass, Purple saxifrage, and the Arctic poppy. Another
+            common plant in the Tundra as well as other places in the mountains,
+            is Cranberry.
+          </p>
+        </div>
+        <div id="box2">
+          <img
+            style="
+              border: #24929c double 8px;
+              border-radius: 5%;
+              margin-left: 20%;
+              margin-top: 15%;
+            "
+            src="Images/armap.jpg"
+            alt="Picture of a map of Arctic Tundra "
+            title="Picture of a map of Arctic Tundra"
+            width="170%"
+            height="20%" />
+          <img
+            style="
+              border: #24929c double 8px;
+              border-radius: 5%;
+              margin-left: 20%;
+              margin-top: 30%;
+            "
+            src="Images/animartic.webp"
+            alt="Picture of the animals in the Arctic"
+            title="Picture of the animals in the Arctic"
+            width="180%"
+            height="23%" />
+          <img
+            style="
+              border: #24929c double 8px;
+              border-radius: 5%;
+              margin-left: 20%;
+              margin-top: 20%;
+              margin-bottom: -100%;
+            "
+            src="Images/floart.webp"
+            alt="Picture of plants and trees in the Arctic"
+            title="Picture of plants and trees in the Arctic"
+            width="170%"
+            height="25%" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

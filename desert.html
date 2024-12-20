@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biome Project - Biomes</title>
+
+    <link rel="stylesheet" href="CSS/external.css" />
+    <style>
+      nav {
+        position: absolute;
+        top: 10%;
+        left: 8%;
+      }
+      body {
+        background-color: rgb(239, 202, 133);
+      }
+      p {
+        font-size: 15px;
+        color: rgb(255, 250, 227);
+      }
+      h1 {
+        font-size: 60px;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        color: rgb(192, 132, 76);
+      }
+      h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 5px;
+        background: linear-gradient(45deg, #bb7448, #d4996bde, #da9372fe);
+        transition: width 0.3s ease-in-out;
+      }
+
+      h1:hover::after {
+        width: 100%;
+      }
+      p {
+        font-size: 15px;
+        color: rgb(255, 250, 227);
+      }
+      .container {
+        display: flex; /* Enable flexbox layout */
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        margin-top: 23%;
+
+        #box1 {
+          width: 50%;
+        }
+
+        #box2 {
+          width: 20%;
+        }
+      }
+      table,
+      th,
+      td {
+        color: aliceblue;
+        border-radius: 5%;
+        border: solid;
+        border-width: 3px;
+        border-color: #9c5224;
+        margin-left: 8%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Navigation Bar-->
+    <header>
+      <nav>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="forest.html">Tropical Forest Biome</a>
+          <a href="desert.html">Arid Desert Biome</a>
+          <a href="grassland.html">Savannah Grassland Biome</a>
+          <a href="tundra.html">Arctic Tundra Biome</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Arid Desert Biome</h1>
+      <div class="container">
+        <div id="box1">
+          <!--Location-->
+          <h2 style="font-size: 150%; color: rgb(165, 124, 99)">Location</h2>
+          <p>
+            The Arid Desert is one of the most commonly known biomes. They are
+            located in Northern Africa, the Middle East, Central Australia, and
+            Central Asia.
+          </p>
+          <!--Climate-->
+          <h2 style="font-size: 150%; color: rgb(165, 124, 99)">Climate</h2>
+          <p>
+            The Arid Desert is typically hot and dry year-round. The average
+            temperature is 25°C to 50°C. Arid Deserts also get very little
+            precipitation, which also leads to low humidity.
+          </p>
+          <!--Animals-->
+          <h2 style="font-size: 150%; color: rgb(165, 124, 99)">
+            Fauna (Animals)
+          </h2>
+          <p>
+            There are a variety of animals in the Arid Desert. Most of them are
+            a large diversity of reptiles. There are also many marsipuals, like
+            hares and sometimes camels. The animals have developed a habit of
+            only coming out at night and staying inactive during the day.
+          </p>
+          <table style="width: 60%">
+            <tr>
+              <th>Herbivore</th>
+              <th>Canivore</th>
+            </tr>
+            <tr>
+              <td>Gazelles</td>
+              <td>Foxes</td>
+            </tr>
+            <tr>
+              <td>Oryxes</td>
+              <td>Leopards</td>
+            </tr>
+            <tr>
+              <td>Ibexes</td>
+              <td>Hyenas</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Lynx</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Finches</td>
+            </tr>
+          </table>
+
+          <!--Plants-->
+        <h2 style="font-size: 150%; color: rgb(165, 124, 99)">
+            Flora (Plants)
+          </h2>
+          <p>
+          The Arid Desert is full of unique trees, shrubs and cacti. Typically, the trees found there include; acacia and baobab.
+          The most common cacti found in the desert is the ball cactus. Additionally, the commonly found shrubs include; saltbushes and joint pines.
+          The only flowering plant that survives in this desert is the daisy family. 
+          <p style="color: rgb(255, 250, 227);">Other uncommon  plants;</p>
+          <ul
+            style="
+              color: rgb(255, 250, 227);
+              font-family: Arial;
+              margin-left: 10%;
+            ">
+            <li>Myrtle</li>
+            <li>Protea</li>
+            <li>Casuarina</li>
+          </ul>
+        
+          </p>
+        </div>
+        <div id="box2">
+          <img
+            style="
+              border: #b45a22 double 8px;
+              border-radius: 5%;
+              margin-left: 20%;
+            "
+            src="Images/aridmap.png"
+            alt="Picture of a map of Arid Desert"
+            title="Picture of a map of Arid Desert"
+            width="150%"
+            height="20%" />
+          <img
+            style="
+              border: #b45a22 double 8px;
+              border-radius: 5%;
+              margin-left: 20%;
+              margin-top: 5%;
+              margin-bottom: 10%;
+            "
+            src="Images/arianimals.webp"
+            alt="Picture of animals in the Arid Desert"
+            title="Picture of animals in the Arid Desert"
+            width="160%"
+            height="30%" />
+          <img
+            style="
+            border: #b45a22 double 8px;
+              border-radius: 5%;
+              margin-left: 20%;
+              margin-top: 10%;
+              margin-bottom: -80%;
+            "
+            src="Images/desertree.webp"
+            alt="Picture of plants in the Arid Desert"
+            title="Picture of plants in the Arid Desert"
+            width="160%"
+            height="30%" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
